@@ -1,61 +1,40 @@
-
-def add(num1, num2):
-    return num1 + num2
+import math
 
 
-def subtraction(num1, num2):
-    return num1 - num2
+def eval_age(age):
+
+    if age < 0:
+        raise TypeError("Age can not be negative")
+
+    if age < 20:
+        return "You are so young"
+    elif age < 40:
+        return "You are still young"
+    elif age < 65:
+        return "You are adult"
+    elif age < 100:
+        return "Take care"
 
 
-def multiply(num1, num2):
-    return num1 * num2
-
-
-def divide(num1, num2):
-    try:
-        return num1 / num2
-    except ZeroDivisionError:
-        print("It is not posible to vivide by zero")
-        return "Wrong operation"
-
-
-while True:
-    try:
-        op1 = int(input("Type the first number please:"))
-        op2 = int(input("Type the second number please:"))
-        break;
-    except ValueError:
-        print("You must type a number")
-
-
-operation = input("Type the kind of operation that you want: (add, subtraction, multiply, divide)")
-
-if operation == "add":
-        print(add(op1, op2))
-elif operation == "subtraction":
-        print(subtraction(op1, op2))
-elif operation == "multiply":
-        print(multiply(op1, op2))
-else:
-        print(divide(op1, op2))
-
-print("Operation done!!")
-
+print(eval_age(18))
 
 print("Second exercise \n")
 
-def other_divide():
-    try:
-        op1 = int(input("Type the first number please:"))
-        op2 = int(input("Type the second number please:"))
-        print("Result is: " + str(op2/op2))
 
-    except ValueError:
-        print("You must type a number")
-    except ZeroDivisionError:
-        print("You can not divide by zero")
-    finally:
-        print("Calculation was done!!!")
+def square_root(number):
+    if number < 0:
+        raise ValueError("Number can not be negative")
+
+    else:
+         return math.sqrt(number)
 
 
-other_divide()
+numb = int(input("Type number to calculate it's square root"))
+try:
+    print(square_root(numb))
+except ValueError as error:
+     print(error)
+
+print("Application done!!")
+
+
