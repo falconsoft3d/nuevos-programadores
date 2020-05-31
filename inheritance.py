@@ -1,46 +1,28 @@
 
-class Car():
-    def __init__(self):
-        self.__chassis_lenght = 250
-        self.__chassis_width = 120
-        self.__wheels = 4
-        self.__on = False
+class Vehicle():
+    def __init__(self, pmake, pmodel):
+        self.make = pmake
+        self.model = pmodel
+        self.on = False
+        self.acelerate = False
+        self.brakes = False
 
-    def start(self, decision):
-        self.__on = decision
+    def start(self):
+        self.on = True
 
-        if (self.__on):
-            checked = self.__interal_check()
+    def to_acelerate(self):
+        self.acelerate = True
 
-        if (self.__on and checked):
-            return "The car is on"
-        elif (self.__on and checked == False):
-            return "Something went wrong during internal check"
-        else:
-            return "The car is off"
+    def to_brake(self):
+        self.brakes = True
 
     def status(self):
-        print("The car has ", self.__wheels, " wheels. It's width is ", self.__chassis_width,
-              " and it's lenght is about ", self.__chassis_lenght)
-
-    def __interal_check(self):
-        print("Checking all features")
-        self.fuel = "ok"
-        self.oil = "ok"
-        self.doors = "close"
-
-        if self.fuel == "ok" and self.oil == "ok" and self.doors == "close":
-            return True
-        else:
-            return False
+        print("Make ", self.make, "\nModel ", self.model)
 
 
-my_car = Car()
-print(my_car.start(True))
-print(my_car.status())
+class Moto(Vehicle):
+    pass
 
-print("-----------------Second car will be here-------------------")
 
-second_car = Car()
-print(second_car.start(False))
-print(second_car.status())
+my_moto = Moto("Jawa", "350")
+print(my_moto.status())
