@@ -1,25 +1,20 @@
-import gettext
+president_salary = int(input("Type salary of the president"))
+print("The salary of the president is" + str(president_salary))
 
-languages = ['es_ES']
+principal_salary = int(input("Type salary of the principal"))
+print("The salary of the president is" + str(principal_salary))
 
-t = gettext.translation('programadores_nuevos_espa-a',
-                        'locale',
-                        languages=languages,
-                        fallback=True,)
-_ = t.gettext
+manager_salary = int(input("Type salary of the manager"))
+print("The salary of the president is" + str(manager_salary))
 
-print("Verify access")
-expected_age = int(input("Type your age"))
+worker_salary = int(input("Type salary of the worker"))
+print("The salary of the president is" + str(manager_salary))
 
-# Working with condition's syntax
-if expected_age < 18:
-    print("You can not come inside")
-elif expected_age > 100:
-    print("Wrong age")
+if worker_salary < manager_salary < principal_salary < president_salary:
+    print("Everything works fine")
 else:
-    print("You can come inside")
+    print("Something is going wrong")
 
-print("Program finished")
 
 
 
