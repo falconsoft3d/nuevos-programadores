@@ -23,6 +23,16 @@ msgstr "Aprendiendo funciones basicas"
 msgid "Step by step we will move forward"
 msgstr "Paso a poso iremos avanzando"
 
+msgid "Approved"
+msgstr "Aprobado"
+
+msgid "Failed"
+msgstr "Fallido"
+
+msgid "Type evaluation for the student"
+msgstr "Teclee evaluacion del estudiante"
+
+
 
 
 
