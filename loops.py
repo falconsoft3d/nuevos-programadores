@@ -1,13 +1,18 @@
+print("First exercise")
+for i in range(5,21,3):
+    print(f"The value is {i}")
+print("\n")
+print("Second exercise\n")
 
-count = 0
+valid = False
 
 my_email = input("Type your email")
 
-for i in my_email:
-    if(i=="@" or i=="."):
-        count = count + 1
+for i in range(len(my_email)):
+    if my_email[i]=="@":
+        valid = True
 
-if count == 2:
+if valid:
     print("Right email")
 else:
     print("Wrong email")
