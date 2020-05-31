@@ -8,18 +8,18 @@ t = gettext.translation('programadores_nuevos_espa-a',
                         fallback=True,)
 _ = t.gettext
 
-print("Type evaluation for the student")
-eval = input()
+print("Verify access")
+expected_age = int(input("Type your age"))
 
 # Working with condition's syntax
-def evaluate(grade):
-    evaluation = "Approved"
-    if grade < 5:
-        evaluation = "Failed"
-    return evaluation
+if expected_age < 18:
+    print("You can not come inside")
+elif expected_age > 100:
+    print("Wrong age")
+else:
+    print("You can come inside")
 
-
-print(evaluate(int(eval)))
+print("Program finished")
 
 
 
