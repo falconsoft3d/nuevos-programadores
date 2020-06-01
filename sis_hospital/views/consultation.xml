@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="sis_hospital.consultation">
+      <field name="name">Consultation List</field>
+      <field name="model">sis_hospital.consultation</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="partner_id"/>
+          <field name="specialty_id"/>
+        </tree>
+      </field>
+    </record>
+
+
+
+    <record model="ir.actions.act_window" id="sis_hospital.action_consultation_window">
+      <field name="name">Consultation</field>
+      <field name="res_model">sis_hospital.consultation</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- menu categories -->
+    <menuitem name="Consultation" id="sis_hospital.menu_consultation_category" parent="sis_hospital.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Consultation" id="sis_hospital.consultation_menu_1" parent="sis_hospital.menu_consultation_category"
+              action="sis_hospital.action_consultation_window"/>
+
+  </data>
+</odoo>
