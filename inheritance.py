@@ -47,8 +47,9 @@ class Moto(Vehicle):
 # ----------------------------------- Class Electric Vehicle -------------------------------------------------------
 
 
-class VElectric():
-    def __init__(self):
+class VElectric(Vehicle):
+    def __init__(self, pmake, pmodel):
+        super().__init__(pmake, pmodel)
         self.autonomy = True
 
     def charge(self):
@@ -70,6 +71,8 @@ print(my_van.to_load(True))
 # ----------------------------------- Class EBike -------------------------------------------------------
 
 class Ebike(VElectric, Vehicle):
+
     pass
 
-my_bike = Ebike()
+
+my_bike = Ebike("Mikosuki", "500")
