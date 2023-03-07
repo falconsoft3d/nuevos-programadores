@@ -1,6 +1,15 @@
 # Modulos para enseñar #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+# My contact data
+```
+Marlon Falcón Hernández | Valencia | Spain
+* ERP, CRM y Software: https://www.marlonfalcon.com
+» Email: mfalconsoft@gmail.com , falconsof.3d@gmail.com
+» Github: https://github.com/falconsoft3d
+» linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
+```
+
+Esta es una guia de los desarrollos basico para nuevos programadores.
 
 ### Tabla de Contenido
 ````
