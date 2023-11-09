@@ -82,3 +82,8 @@ Allows users to configure VTC
     'license': 'LGPL-3',
 }
 ````
+
+````
+invisible="state not in ['resuelto','calificado']"
+statusbar_visible="borrador,refused,stop,aprobado,trabajando,actualizar,resuelto,calificado"
+````
