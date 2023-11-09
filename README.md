@@ -54,3 +54,31 @@ Esta es una guia de los desarrollos basico para nuevos programadores.
 [36]- Partner con Registros Múltiples en botón a la derecha.
 37- PGAdmin. Operaciones varias con la base de datos.
 ````
+
+## Que tener en Cuenta en la 17
+El manifest cambio.
+````
+{
+    'name': 'VTC Base MFH',
+    'version' : '1.2',
+    'summary': 'Invoices & Payments',
+    'sequence': 10,
+    'description': """
+VTC Base
+================================
+Allows users to configure VTC
+    """,
+    'category': 'Accounting/Accounting',
+    'website': 'https://www.marlonfalcon.com',
+    'depends': ['base','account'],
+    'category': 'Extra Tools',
+    'auto_install': False,
+    'data': [
+        'security/ir.model.access.csv',
+        'views/vtc_supplier_views.xml',
+        'views/menu_views.xml',
+        'data/ir_cron.xml',
+    ],
+    'license': 'LGPL-3',
+}
+````
