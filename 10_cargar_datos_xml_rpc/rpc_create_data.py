@@ -8,9 +8,9 @@ import csv
 
 host = '127.0.0.1'
 port = 8069
-db = 'odoo17'
+db = 'db17-other' # database
 user = 'admin'
-password = 'admin'
+password = 'x1234567890' 
 
 url = 'http://%s:%d/xmlrpc/2/' % (host, port)
 
@@ -24,7 +24,7 @@ def _create(state):
     print("=1=")
     print(state)
     if state is True:
-        archive = csv.DictReader(open('D:\\Intall\\install\\odoo-17.0\\custom\\nuevos-programadores\\10_cargar_datos_xml_rpc\\data.csv'))
+        archive = csv.DictReader(open('data.csv')) # Ruta al archivo data.csv
         cont = 0
         for field in archive:
             cont += 1
