@@ -53,4 +53,5 @@ Esta es una guia de los desarrollos basico para nuevos programadores.
 35- Web Scraping con Selenium.
 [36]- Partner con Registros Múltiples en botón a la derecha.
 37- PGAdmin. Operaciones varias con la base de datos.
+38- Trabajando con controladores, buscar un empleado y mostrar su datos.
 ````
