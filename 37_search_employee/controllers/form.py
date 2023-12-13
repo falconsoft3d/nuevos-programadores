@@ -25,6 +25,7 @@ class SearchEmployee(http.Controller):
                 'employee_id': False,
             })
 
+    # http://localhost:8069/public/employee/1234567890
     @http.route('/public/employee/<vat>', methods=['GET'],  cors='*', auth='public')
     def get_form(self, **kwargs):
         # url from config_parameter web.base.url
