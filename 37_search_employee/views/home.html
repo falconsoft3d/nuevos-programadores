@@ -18,13 +18,64 @@
 
                 </hr>
 
-                <form class="form-inline justify-content-center">
-                    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Cédula"/>
+
+                <form id="searchForm" class="form-inline justify-content-center">
+                    <input type="text" id="cedulaInput" class="form-control mb-2 mr-sm-2" placeholder="Cédula"/>
                     <button type="submit" class="btn btn-primary mb-2">Buscar</button>
                 </form>
+
+
+                {% if employee_id %}
+                <hr>
+                <div>
+                    <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Clave</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cédula</td>
+                            <td>{{employee_id.identification_id}}</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>{{employee_id.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Imagen</td>
+                           <td>
+                                {% if employee_img %}
+                                    <img src="{{employee_img}}"
+                                         alt="Imagen del Empleado" style="width: 100px; height: auto;">
+                                {% else %}
+                                    <p>No disponible</p>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                {% else %}
+                <div class="alert alert-danger" role="alert">
+                    No se encontró el empleado
+                </div>
+                {% endif %}
+
+
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            var cedula = document.getElementById('cedulaInput').value;
+            var url = '{{web_base_url}}' + cedula;
+            window.location.href = url;
+        });
+    </script>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -28,7 +28,7 @@
     'license': 'AGPL-3',
     'category': 'Extra Tools',
     'summary': 'Search Sale By Date',
-    'depends': ['base','sale'],
+    'depends': ['base','hr'],
     'data': [
             ],
     'images': ['static/description/banner.jpg'],
