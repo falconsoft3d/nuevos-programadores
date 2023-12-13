@@ -30,8 +30,6 @@
     'summary': 'Search Sale By Date',
     'depends': ['base','sale'],
     'data': [
-              'security/ir.model.access.csv',
-              'wizard/search_sale_wzd.xml',
             ],
     'images': ['static/description/banner.jpg'],
 }
