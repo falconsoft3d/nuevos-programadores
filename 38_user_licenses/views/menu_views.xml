@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+
+
+    <menuitem id="licenses_menu_main" name="License" sequence="100"
+
+              groups="38_user_licenses.group_user_license,38_user_licenses.group_user_license_all"
+              web_icon="38_user_licenses,static/description/icon.png">
+            <menuitem id="menu_licenses_2" name="Licenses" sequence="10">
+
+                 <menuitem id="menu_licenses_3"
+                          name="Licenses"
+                          sequence="30"
+                          action="action_system_license"/>
+
+            </menuitem>
+    </menuitem>
+
+    </data>
+</odoo>

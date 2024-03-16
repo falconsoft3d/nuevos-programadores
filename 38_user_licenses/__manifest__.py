@@ -22,15 +22,21 @@
 {
     'name': 'User Licenses',
     'version': '17.0',
-    'author': 'Marlon Falcon Hernandez',
-    'maintainer': 'Marlon Falcon Hernandez',
-    'website': 'http://www.marlonfalcon.com',
+    'author': 'Your name',
+    'maintainer': 'Your name',
+    'website': 'http://www.yourweb.com',
     'license': 'AGPL-3',
     'category': 'Extra Tools',
-    'summary': 'User Licenses by crate...',
-    'depends': ['base'],
+    'summary': 'User Licenses by create...',
+    'depends': ['base','mail','sale'],
     'data': [
-              'views/views.xml',
+              'data/ir_sequence.xml',
+              'data/ir_cron.xml',
+              'security/ir.model.access.csv',
+              'security/security_groups.xml',
+              'views/system_license_views.xml',
+              'views/menu_views.xml',
+
             ],
     'images': ['static/description/banner.jpg'],
 }

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="0">
+    <record id="system_license_cron" model="ir.cron">
+        <field name="name">System license</field>
+        <field name="active">True</field>
+        <field name="priority">5</field>
+        <field name="interval_number">1</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="True" />
+        <field name="interval_type">hours</field>
+        <field name="model_id" ref="model_system_license"/>
+        <field name="state">code</field>
+        <field name="code">model.load_license()</field>
+    </record>
+</odoo>

@@ -1,0 +1,321 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* 38_user_licenses
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-16 11:35+0000\n"
+"PO-Revision-Date: 2024-03-16 11:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: 38_user_licenses
+#: model:ir.model.fields.selection,name:38_user_licenses.selection__system_license__type__100
+msgid "100 %"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields.selection,name:38_user_licenses.selection__system_license__type__50
+msgid "50 %"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__name
+msgid "Code"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__create_date
+msgid "Create Date"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__expiration_date
+msgid "Expiration Date"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__id
+msgid "ID"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__id_database
+msgid "ID Database"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__message_has_error
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.module.category,name:38_user_licenses.license_security_rules_category
+#: model:ir.ui.menu,name:38_user_licenses.licenses_menu_main
+msgid "License"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__license_code
+msgid "License Code"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.ui.menu,name:38_user_licenses.menu_licenses_2
+#: model:ir.ui.menu,name:38_user_licenses.menu_licenses_3
+msgid "Licenses"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model_terms:ir.ui.view,arch_db:38_user_licenses.view_form_system_license
+msgid "Load licence"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__number_of_uses_original
+msgid "Number Original"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__number_of_uses
+msgid "Number of Uses"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__product_id
+msgid "Product"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.actions.act_window,name:38_user_licenses.action_system_license
+#: model:ir.model,name:38_user_licenses.model_system_license
+#: model_terms:ir.ui.view,arch_db:38_user_licenses.view_form_system_license
+msgid "System License"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.actions.server,name:38_user_licenses.system_license_cron_ir_actions_server
+msgid "System license"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__user_id
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__user_use_id
+msgid "User"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.module.category,description:38_user_licenses.license_security_rules_category
+msgid "User Licenses"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:res.groups,name:38_user_licenses.group_user_license_all
+msgid "User see all documents"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:res.groups,name:38_user_licenses.group_user_license
+msgid "User see owner documents"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,help:38_user_licenses.field_system_license__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model_terms:ir.actions.act_window,help:38_user_licenses.action_system_license
+msgid "create a new record"
+msgstr ""
+
+#. module: 38_user_licenses
+#: model:ir.model.fields,field_description:38_user_licenses.field_system_license__type
+msgid "type"
+msgstr ""

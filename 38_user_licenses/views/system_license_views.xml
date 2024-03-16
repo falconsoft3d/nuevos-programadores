@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+    <record id="view_form_system_license" model="ir.ui.view">
+         <field name="name">view.form.system.license</field>
+         <field name="model">system.license</field>
+         <field name="arch" type="xml">
+            <form string="System License">
+              <header>
+                    <button name="load_licence" string="Load licence" class="oe_highlight" type="object"/>
+              </header>
+              <sheet>
+
+                  <div class="oe_title">
+                           <h1>
+                               <field name="name" readonly="1"/>
+                           </h1>
+                        </div>
+                  <group>
+                      <group>
+                          <field name="user_use_id"/>
+
+                          <field name="id_database"/>
+                          <field name="license_code"/>
+
+                          <field name="type"/>
+
+                          <field name="product_id"/>
+
+                          <field name="expiration_date"/>
+
+                       </group>
+                      <group>
+                          <field name="number_of_uses" readonly="1"/>
+                          <field name="number_of_uses_original"/>
+                          <field name="create_date" readonly="1"/>
+                          <field name="user_id" readonly="1"/>
+                       </group>
+                  </group>
+               </sheet>
+                <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_system_license" model="ir.ui.view">
+         <field name="name">view.tree.system.license</field>
+         <field name="model">system.license</field>
+         <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="user_use_id"/>
+                <field name="product_id"/>
+                <field name="create_date" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_system_license" model="ir.actions.act_window">
+        <field name="name">System License</field>
+        <field name="res_model">system.license</field>
+        <field name="view_id" ref="view_tree_system_license"/>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            create a new record</p>
+       </field>
+    </record>
+
+
+    </data>
+</odoo>
